@@ -89,7 +89,7 @@ footer .navigation-items {
   }
 
 .slideshow_container {
-  background-image: url("images/gray_mezzotint_copy.jpeg");
+  background-color: gray;
 }
 
 .opener_container {
@@ -108,6 +108,10 @@ footer .navigation-items {
 .opener_body {
   background-image: url("images/white_soft_marble.jpeg");
   opacity: .75;
+}
+
+.menu_class_header {
+  text-decoration: underline;
 }
 
 .full_menu_container {
