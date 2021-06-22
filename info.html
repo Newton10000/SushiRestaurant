@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://kit.fontawesome.com/55e2265373.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 39.74855, lng: -105.21121 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+    <nav>
+      <h1 id="logo">Shirakawa Sushi</h1><i class="fas fa-mountain" id="mountain_image"></i>
+      <ul class="navigation-items">
+        <li class="navigation-item"><a href="index.html">Home</a></li>
+        <li class="navigation-item"><a href="#info">Info</a></li>
+        <li class="navigation-item"><a href="menu.html">Menu</a></li>
+        <li class="navigation-item"><a href="specials.html">Specials</a></li>
+        <li class="navigation-item"><a href="contact.html">Contact</a></li>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram"></i>
+      </ul>
+    </nav>
+    </header>
+    <main>
+
+      <div class="info_body_container">
+        <h1>Business Hours</h1>
+          <table class="business_hours_container">
+            <tr>
+              <td class="day">Mon - Thu:</td>
+              <td class="time">11:00 AM - 9:00 PM</td>
+            </tr>
+            <tr>
+              <td class="day">Fri:</td>
+              <td class="time">11:00 AM - 10:00 PM</td>
+            </tr>
+            <tr>
+              <td class="day">Sat:</td>
+              <td class="time">Noon - 10:00 PM</td>
+            </tr>
+            <tr>
+              <td class="day">Sun:</td>
+              <td class="time">Noon - 8:00 PM</td>
+            </tr>
+          </table>
+        <h1>Location</h1>
+        <h3>Address :2203 Ford St, Golden, CO, 80401ß</h3>
+  <!--The div element for the map -->
+          <div id="map"></div>
+
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmFz2pp1ey1SWlGUzA4BC0prRMFpKmWME&callback=initMap"
+            async
+            ></script>
+
+          </div>
+    </main>
+    <footer>
+      <nav>
+        <div class="footer_info">
+          <div class="phone_info">
+            <i class="fas fa-phone"></i>
+              <div class="phone_number">
+                303-555-8231
+              </div>
+          </div>
+          <div class="address_info">
+            <i class="fas fa-map-marker-alt"></i>
+              <div class="address">
+                2203 Ford St, Golden, CO, 80401
+              </div>
+          </div>
+        </div>
+        <ul class="navigation-items">
+          <li class="navigation-item"><a href="index.html">Home</a></li>
+          <li class="navigation-item"><a href="#info">Info</a></li>
+          <li class="navigation-item"><a href="menu.html">Menu</a></li>
+          <li class="navigation-item"><a href="specials.html">Specials</a></li>
+          <li class="navigation-item"><a href="contact.html">Contact</a></li>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-instagram"></i>
+        </ul>
+      </nav>
+    </footer>

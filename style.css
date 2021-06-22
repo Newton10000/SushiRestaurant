@@ -1,0 +1,200 @@
+
+header {
+  background-color: midnightblue;
+  color: white;
+  height: 70px;
+  width: 100%;
+}
+
+main {
+  min-height: 400px;
+}
+
+footer {
+  background-color: midnightblue;
+  color: white;
+  height: 100%;
+  width: 100%;
+  border: 10px;
+}
+
+footer nav {
+  height: 30px;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  font-family: Jazz LET, fantasy;
+}
+
+nav h1 {
+  padding-left: 20px;
+}
+
+.navigation-items {
+  display: flex;
+  list-style-type: none;
+  padding: 10px 0px 10px 10px;
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
+  color: white;
+}
+
+.navigation-items i {
+  padding: 5px;
+}
+
+.navigation-item a {
+  padding: 10px;
+  color: white;
+}
+
+.slide_container {
+    overflow: hidden;
+    max-height: 600px;
+  }
+
+.opener_container {
+  margin: auto;
+  font-family: Jazz LET, fantasy;
+  text-align: center;
+  max-width: 700px;
+}
+
+.opener_text {
+  font-family: Palatino, URW Palladio L, serif;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.opener_body {
+  background-image: url("images/white_soft_marble.jpeg");
+  opacity: .75;
+}
+
+.full_menu_container {
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+.full_menu_container h1 {
+  font-weight: bold;
+  text-align: center;
+  font-family: Jazz LET, fantasy;
+  font-size: 48px;
+}
+
+.menu_body_container {
+  margin: auto;
+  opacity: .75;
+  padding-left: 20px;
+  max-width: 700px;
+  border: solid 1px;
+  border-color: midnightblue;
+  font-family: arial, sans-serif;
+}
+
+.menu_item_container {
+  padding-left: 20px;
+}
+
+.item_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  }
+
+.food_item {
+  align-items: left;
+  font-size: 20px;
+}
+
+.food_price {
+  align-items: right;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.item_description {
+  padding: 2px 200px 16px 15px;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.appetizers_body_container {
+  display: grid;
+  grid-column: 1 / span 2;
+}
+
+.sushi_dinner_name_container {
+  display: inline-flex;
+}
+
+.sushi_dinner_description {
+  font-size: 14px;
+  font-style: italic;
+  padding-left: 20px;
+}
+
+.sushi_dinner_description span {
+  vertical-align: middle;
+}
+
+.info_body_container {
+  opacity: .75;
+  padding-left: 20px;
+}
+
+.business_hours_container {
+  padding-left: 10px;
+}
+
+#map {
+        height: 250px;
+        /* The height is 400 pixels */
+        width: 250px;
+        /* The width is the width of the web page */
+        margin-left: 30px;
+        margin-bottom: 100px;
+
+      }
+
+
+
+#mountain_image {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+
+.time {
+  padding-left: 10px;
+}
+
+.footer_info {
+  display: inline-flex;
+  font-family: Palatino, URW Palladio L, serif;
+  font-size: 16px;
+}
+
+.phone_number {
+  padding-left: 10px;
+}
+
+.phone_info {
+  display: inline-flex;
+}
+
+.address {
+  padding-left: 10px;
+}
+
+.address_info {
+  padding-left: 20px;
+  display: inline-flex;
+}

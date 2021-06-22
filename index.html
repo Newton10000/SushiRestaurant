@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://kit.fontawesome.com/55e2265373.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"
+  </head>
+  <body>
+    <header>
+    <nav>
+      <h1 id="logo">Shirakawa Sushi</h1><i class="fas fa-mountain" id="mountain_image"></i>
+      <ul class="navigation-items">
+        <li class="navigation-item"><a href="#home">Home</a></li>
+        <li class="navigation-item"><a href="info.html">Info</a></li>
+        <li class="navigation-item"><a href="menu.html">Menu</a></li>
+        <li class="navigation-item"><a href="specials.html">Specials</a></li>
+        <li class="navigation-item"><a href="contact.html">Contact</a></li>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram"></i>
+      </ul>
+    </nav>
+    </header>
+    <main>
+
+
+      <div class="slide_container" id="imgGallery">
+
+        <div class="mySlides fade">
+          <img src="images/sushi_nigiri_assorted_copy.jpeg" style="width:100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/shirakawa_city.jpeg" style="width:100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/tuna_nigiri_copy.jpeg" style="width:100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/fresh_fish.jpeg" style="width:100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/orange_nigiri_closeup_copy.jpeg" style="width:100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/sushi_chef.jpeg" style="width:100%" />
+        </div>
+
+      </div>
+
+      <!--to make sure image spreads the width--->
+      <div class="opener_body">
+      <!--to make sure image spreads the width--->
+
+        <div class="opener_container">
+          <br>
+          <h1>Welcome to Shirakawa Sushi</h1>
+          <h2>Feeding Denver since 1984</h2>
+
+          <p class="opener_text">Originally from Shirakawa Japan, brothers Haruto & Honoka Nakamura
+          arrived to the United States in 1980. From there, they developed a
+          passion for delivering authentic Japanese Cuisine to their newfound
+          friends. Working as restauranteurs in their home country, brothers
+          Nakamura aquired the experience & means to open up their own shop.
+          </p>
+          <br>
+          <h2>Transitioning back to normal</h2>
+          <p class="opener_text">We are happy to announce that in accordance with Colorado state law,
+          we will be able to once again offer a robust indoor dining experience.
+          To keep in accordance with CDC recommendations, we will still
+          encourage social distancing measures, as our indoor capacity is 85%
+          what it previously was, pre-pandemic.
+          </p>
+          <br>
+          <br>
+        </div>
+      </div>
+
+      <footer>
+        <nav>
+          <div class="footer_info">
+            <div class="phone_info">
+              <i class="fas fa-phone"></i>
+                <div class="phone_number">
+                  303-555-8231
+                </div>
+            </div>
+            <div class="address_info">
+              <i class="fas fa-map-marker-alt"></i>
+                <div class="address">
+                  2203 Ford St, Golden, CO, 80401
+                </div>
+            </div>
+          </div>
+          <ul class="navigation-items">
+            <li class="navigation-item"><a href="#home">Home</a></li>
+            <li class="navigation-item"><a href="info.html">Info</a></li>
+            <li class="navigation-item"><a href="menu.html">Menu</a></li>
+            <li class="navigation-item"><a href="specials.html">Specials</a></li>
+            <li class="navigation-item"><a href="contact.html">Contact</a></li>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram"></i>
+          </ul>
+        </nav>
+      </footer>
+
+      <script>
+      var indexValue = 0;
+      function slideShow(){
+        setTimeout(slideShow, 5000);
+        var x;
+        const img = document.querySelectorAll("img");
+        for(x = 0; x < img.length; x++){
+          img[x].style.display = "none";
+        }
+        indexValue++;
+        if(indexValue > img.length){indexValue = 1}
+        img[indexValue -1].style.display = "block";
+      }
+      slideShow();
+    </script>
+
+    </main>
+  </body>
+
+</html>
