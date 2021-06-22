@@ -10,10 +10,19 @@ main {
   min-height: 400px;
 }
 
-footer {
+footer .specials_footer, .contact_footer {
+  position: absolute;
+  bottom: 0;
   background-color: midnightblue;
   color: white;
-  height: 100%;
+  width: 100%;
+  border: 10px;
+}
+
+footer {
+  bottom: 0;
+  background-color: midnightblue;
+  color: white;
   width: 100%;
   border: 10px;
 }
@@ -38,7 +47,17 @@ nav h1 {
 .navigation-items {
   display: flex;
   list-style-type: none;
-  padding: 10px 0px 10px 10px;
+  padding: 0px 20px 0px 10px;
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
+  color: white;
+}
+
+footer .navigation-items {
+  display: flex;
+  list-style-type: none;
+  padding: 10px 40px 10px 10px;
   align-items: center;
   margin: 0;
   margin-left: auto;
