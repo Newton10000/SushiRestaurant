@@ -2,7 +2,7 @@
 <html>
   <head>
     <script src="https://kit.fontawesome.com/55e2265373.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
@@ -58,6 +58,7 @@
         <div class="opener_container">
           <br>
           <h1>Welcome to Shirakawa Sushi</h1>
+
           <h2>Feeding Denver since 1984</h2>
 
           <p class="opener_text">Originally from Shirakawa Japan, brothers Haruto & Honoka Nakamura
@@ -65,6 +66,8 @@
           passion for delivering authentic Japanese Cuisine to their newfound
           friends. Working as restauranteurs in their home country, brothers
           Nakamura aquired the experience & means to open up their own shop.
+          For over 30 years now, Shirakawa Sushi has consistently delivered an
+          authentic Japanese dining experience to the fine town of Golden, Colorado.
           </p>
           <br>
           <h2>Transitioning back to normal</h2>
@@ -110,21 +113,21 @@
       </div>
       </footer>
 
-      <script>
-      var indexValue = 0;
-      function slideShow(){
-        setTimeout(slideShow, 5000);
-        var x;
-        const img = document.querySelectorAll("img");
-        for(x = 0; x < img.length; x++){
-          img[x].style.display = "none";
+        <script>
+        var indexValue = 0;
+        function slideShow(){
+          setTimeout(slideShow, 5000);
+          var x;
+          const img = document.querySelectorAll("img");
+          for(x = 0; x < img.length; x++){
+            img[x].style.display = "none";
+          }
+          indexValue++;
+          if(indexValue > img.length){indexValue = 1}
+          img[indexValue -1].style.display = "block";
         }
-        indexValue++;
-        if(indexValue > img.length){indexValue = 1}
-        img[indexValue -1].style.display = "block";
-      }
-      slideShow();
-    </script>
+        slideShow();
+        </script>
 
     </main>
   </body>

@@ -1,8 +1,7 @@
-
 header {
   background-color: midnightblue;
   color: white;
-  height: 70px;
+  height: 100px;
   width: 100%;
 }
 
@@ -13,40 +12,43 @@ html, body {
   overflow-x: hidden;
 }
 
-
 main {
   min-height: 400px;
 }
 
-footer .specials_footer, .contact_footer {
-  position: absolute;
-  bottom: 0;
-  background-color: midnightblue;
-  color: white;
-  width: 100%;
-  border: 10px 0px 10px 10px;
+#logo {
+  font-size: 42px;
 }
 
 footer {
-  bottom: 0;
+  position: relative;
   background-color: midnightblue;
   color: white;
   width: 100%;
-  border: 10px 0px 10px 10px;
+  height: 50px;
+  border: 10px 0px 0px 10px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  padding: 30px 10px 0px 10px;
+  color: white;
+  height: 60px;
+  z-index: 1;
+  font-family: Jazz LET, fantasy;
 }
 
 footer nav {
-  height: 30px;
-  width: 100%;
-}
-
-nav {
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 0px 10px 0px 10px;
   color: white;
+  width: 100%;
+  z-index: 1;
   font-family: Jazz LET, fantasy;
 }
+
 
 nav h1 {
   padding-left: 20px;
@@ -83,13 +85,16 @@ footer .navigation-items {
 
 .slide_container {
   overflow: hidden;
+  min-height: 100%;
   max-height: 500px;
-  max-width: 90%;
+  max-width: 80%;
   margin: 0px auto;
   }
 
 .slideshow_container {
-  background-color: gray;
+  background-image: linear-gradient(midnightblue, white);
+  position: relative;
+  padding-top: 20px;
 }
 
 .opener_container {
@@ -110,13 +115,16 @@ footer .navigation-items {
   opacity: .75;
 }
 
+/* Start of menu styling */
+
 .menu_class_header {
   text-decoration: underline;
 }
 
 .full_menu_container {
   padding-top: 20px;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
+  background-image: linear-gradient(midnightblue, White, midnightblue);
 }
 
 .full_menu_container h1 {
@@ -124,16 +132,18 @@ footer .navigation-items {
   text-align: center;
   font-family: Jazz LET, fantasy;
   font-size: 48px;
+  color: white;
 }
 
 .menu_body_container {
+  background-color: White;
   margin: auto;
   opacity: .75;
   padding-left: 20px;
   max-width: 700px;
   border: solid 1px;
   border-color: midnightblue;
-  font-family: arial, sans-serif;
+  font-family: Oldtown;
 }
 
 .menu_item_container {
@@ -148,19 +158,19 @@ footer .navigation-items {
 
 .food_item {
   align-items: left;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .food_price {
   align-items: right;
-  font-size: 20px;
-  padding-right: 10px;
+  font-size: 16px;
+  padding-right: 40px;
 }
 
 .item_description {
-  padding: 2px 200px 16px 15px;
-  font-style: italic;
-  font-size: 16px;
+  padding: 5px 200px 16px 15px;
+  font-size: 14px;
+  opacity: .9;
 }
 
 .appetizers_body_container {
@@ -175,16 +185,84 @@ footer .navigation-items {
 .sushi_dinner_description {
   font-size: 14px;
   font-style: italic;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.nigiri_body_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: solid 1px black;
+  padding-top: 10px 0px;
+  margin-right: 20px;
+  background-color: WhiteSmoke;
+}
+
+.nigiri_name_container {
+  display: inline-flex;
+}
+
+.right_column_nigiri {
+  height: auto;
+  border-left: solid 1px gray;
+}
+
+.left_column_nigiri {
+  height: auto;
+}
+
+.item_container_nigiri {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+
+.nigiri_translation {
+  font-size: 12px;
+  padding-top: 3px;
   padding-left: 20px;
 }
 
-.sushi_dinner_description span {
-  vertical-align: middle;
+.nigiri_menu_description {
+  font-size: 14px;
+  font-style: italic;
+  padding-left: 30px;
+  padding-top: 30px;
 }
 
+.nigiri_price {
+  padding-left: 22px;
+}
+
+.nigiri_item {
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.sides_body_container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  padding-right: 40px;
+  padding-left: 20px;
+}
+
+.side_item_container {
+  display: inline-flex;
+}
+
+.side_price {
+  padding-left: 10px;
+}
+/* End of menu styling */
+
+/* Start of info styling */
 .info_body_container {
   opacity: .75;
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 .business_hours_container {
@@ -193,20 +271,93 @@ footer .navigation-items {
 
 #map {
         height: 250px;
-        /* The height is 400 pixels */
         width: 250px;
-        /* The width is the width of the web page */
         margin-left: 30px;
         margin-bottom: 100px;
-
+        box-shadow: 8px 8px 4px 0px; rgba(0, 0, 0, 0.2)
       }
-
 
 
 #mountain_image {
   padding-left: 10px;
   padding-bottom: 10px;
-  font-size: 24px;
+  font-size: 36px;
+}
+
+.specials_header_container {
+  text-align: center;
+}
+
+.specials_body_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  column-gap: 60px;
+  margin-bottom: 110px;
+  row-gap: 40px;
+}
+
+.happy_hour_container {
+  border: 1px solid black;
+  margin-left: 50px;
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("images/wood_planks_brown_overhead.jpeg");
+  background-size: 600px;
+  height: 440px;
+  color: White;
+  font-family: rockwell;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: span 4;
+}
+
+.happy_hour_header {
+  padding-top: 26px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 2px 2px #000000;
+}
+
+.happy_hour_body_container {
+  font-size: 28px;
+  text-align: center;
+  padding-top: 35px;
+  text-shadow: 2px 2px #000000;
+}
+
+.happy_hour_time {
+  padding-bottom: 8px;
+  font-style: italic;
+}
+
+.happy_hour_item {
+  padding-bottom: 8px;
+}
+
+.weekly_deals_container {
+  border: 1px solid black;
+  margin-right: 50px;
+  height: 300px;
+}
+
+.weekly_deals_header {
+  padding-left: 30px;
+}
+
+.weekly_deals_item_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px 0px;
+}
+
+.weekly_deals_date {
+  padding-left: 45px;
+}
+
+.full_moon_container {
+  border: 1px solid black;
+  margin-right: 50px;
 }
 
 .time {
@@ -234,4 +385,11 @@ footer .navigation-items {
 .address_info {
   padding-left: 20px;
   display: inline-flex;
+}
+
+#info_page_footer, #specials_page_footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
 }
