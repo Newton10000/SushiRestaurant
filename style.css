@@ -284,9 +284,24 @@ footer .navigation-items {
   font-size: 36px;
 }
 
+
 .specials_header_container {
   text-align: center;
+  font-family: rockwell;
+  font-weight: bold;
+  text-shadow: 2px 2px #000000;
+  font-size: 24px;
+  font-color: maroon;
 }
+
+
+.specials_full_container {
+  background-color: cornsilk;
+  background-size: auto;
+  min-height: 100vh;
+  width: 100vw;
+}
+
 
 .specials_body_container {
   display: grid;
@@ -339,6 +354,11 @@ footer .navigation-items {
   border: 1px solid black;
   margin-right: 50px;
   height: 300px;
+  background-color: maroon;
+  color: White;
+  text-shadow: 2px 2px #000000;
+  font-family: rockwell;
+  font-weight: bold;
 }
 
 .weekly_deals_header {
@@ -349,6 +369,7 @@ footer .navigation-items {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 10px 0px;
+  font-size: 20px;
 }
 
 .weekly_deals_date {
@@ -358,6 +379,48 @@ footer .navigation-items {
 .full_moon_container {
   border: 1px solid black;
   margin-right: 50px;
+  background-image: url("images/full_moon_yellow_orange_long.jpeg");
+  background-size: 600px;
+  background-position: 30px;
+  color: white;
+}
+
+.full_moon_description {
+  text-align: right;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 200px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* End of Specials page styling */
+
+#order_online_body {
+  background-image: url("images/restaurant_black_and_white.jpeg");
+  background-size: cover;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#order_online_body_container {
+  border: solid 1px;
+  max-width: 700px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: ivory;
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.order_online_item_container {
+  width: 300px;
+}
+
+#appetizers_online_body_container {
+  display: flex;
 }
 
 .time {
