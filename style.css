@@ -297,7 +297,7 @@ footer .navigation-items {
 
 .specials_full_container {
   background-color: cornsilk;
-  background-size: auto;
+  background-size: cover;
   min-height: 100vh;
   width: 100vw;
 }
