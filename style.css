@@ -284,6 +284,9 @@ footer .navigation-items {
   font-size: 36px;
 }
 
+#specials_nav {
+  z-index: 2;
+}
 
 .specials_header_container {
   text-align: center;
@@ -292,14 +295,22 @@ footer .navigation-items {
   text-shadow: 2px 2px #000000;
   font-size: 24px;
   font-color: maroon;
+  background-color: cornsilk;
+  background-size: cover;
+  padding-top: 10px;
 }
 
+.specials_main {
+  background-color: cornsilk;
+  background-size: cover;
+}
 
 .specials_full_container {
   background-color: cornsilk;
   background-size: cover;
   min-height: 100vh;
   width: 100vw;
+  margin-top: 0px;
 }
 
 
