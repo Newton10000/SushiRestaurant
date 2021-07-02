@@ -41,8 +41,9 @@
     <main>
 
       <div class="info_body_container">
+        <div class="right_column_info">
         <h1>Business Hours</h1>
-          <table class="business_hours_container">
+          <table class="business_hours_table">
             <tr>
               <td class="day">Mon - Thu:</td>
               <td class="time">11:00 AM - 9:00 PM</td>
@@ -60,11 +61,22 @@
               <td class="time">Noon - 8:00 PM</td>
             </tr>
           </table>
-        <h1>Location</h1>
-        <h3><strong>Address:</strong> 2203 Ford St, Golden, CO, 80401</h3>
+          <div class="call_us_info">
+            <h1>Give us a call!</h1>
+            <div class="call_us_phone_info">
+              <i class="fas fa-phone"></i>
+                <div class="phone_number">
+                  303-555-8231
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="left_column_info">
+          <h1>Location</h1>
+            <h3><strong>Address:</strong> 2203 Ford St, Golden, CO, 80401</h3>
   <!--The div element for the map -->
           <div id="map"></div>
-
+        </div>
   <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
             <script
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmFz2pp1ey1SWlGUzA4BC0prRMFpKmWME&callback=initMap"

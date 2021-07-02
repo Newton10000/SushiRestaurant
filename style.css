@@ -124,7 +124,9 @@ footer .navigation-items {
 .full_menu_container {
   padding-top: 20px;
   padding-bottom: 40px;
-  background-image: linear-gradient(midnightblue, White, midnightblue);
+  /* background-image: linear-gradient(midnightblue, White, midnightblue); */
+  background-image: url("images/restaurant_black_and_white.jpeg");
+  background-size: cover;
 }
 
 .full_menu_container h1 {
@@ -138,7 +140,6 @@ footer .navigation-items {
 .menu_body_container {
   background-color: White;
   margin: auto;
-  opacity: .75;
   padding-left: 20px;
   max-width: 700px;
   border: solid 1px;
@@ -263,10 +264,14 @@ footer .navigation-items {
 .info_body_container {
   opacity: .75;
   padding-left: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.business_hours_container {
+.business_hours_table {
   padding-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 #map {
