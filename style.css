@@ -269,19 +269,47 @@ footer .navigation-items {
 }
 
 .business_hours_table {
-  padding-left: 10px;
+  margin-top: 30px;
+  margin-left: 40px;
+  /* margin-right: 0px; */
   font-size: 20px;
   font-weight: bold;
+  background-color: ivory;
+  border: 1px dotted black;
+  width: 400px;
 }
 
+
+.call_us_info {
+  margin-top: 60px;
+}
+
+.call_us_phone_info {
+  display: flex;
+  font-size: 28px;
+  margin-left: 40px;
+  width: 400px;
+}
+
+.call_us_phone_info i {
+  float: left;
+}
+
+.phone_number_info {
+  float: left;
+  padding-left: 20px;
+}
+
+
 #map {
-        height: 250px;
-        width: 250px;
+        height: 350px;
+        width: 350px;
         margin-left: 30px;
         margin-bottom: 100px;
         box-shadow: 8px 8px 4px 0px; rgba(0, 0, 0, 0.2)
       }
 
+/* End of info page styling */
 
 #mountain_image {
   padding-left: 10px;
@@ -455,6 +483,7 @@ footer .navigation-items {
 
 .phone_info {
   display: inline-flex;
+  color: white;
 }
 
 .address {
@@ -465,6 +494,7 @@ footer .navigation-items {
   padding-left: 20px;
   display: inline-flex;
 }
+
 
 #info_page_footer, #specials_page_footer {
   position: fixed;
