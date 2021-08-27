@@ -355,27 +355,37 @@ footer .navigation-items {
 
 .specials_body_container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 3fr;
-  column-gap: 60px;
-  margin-bottom: 110px;
-  row-gap: 40px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 20px;
+  height: 100vh;
+  margin-bottom: 50px;
+
+  margin-right: 50px;
 }
+
 
 .happy_hour_container {
+
+  background-image: url("images/Happy_Hour.jpeg");
+  background-size: cover;
+/*  height: 440px; */
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: span 3;
+
   border: 1px solid black;
   margin-left: 50px;
+  /*
   background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("images/wood_planks_brown_overhead.jpeg");
-  background-size: 600px;
-  height: 440px;
+
   color: White;
   font-family: rockwell;
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: span 4;
+  */
 }
 
+/*
 .happy_hour_header {
   padding-top: 26px;
   text-align: center;
@@ -399,18 +409,32 @@ footer .navigation-items {
 .happy_hour_item {
   padding-bottom: 8px;
 }
-
-.weekly_deals_container {
-  border: 1px solid black;
+*/
+/*
+.specials_right_align {
   margin-right: 50px;
-  height: 300px;
+}
+*/
+.weekly_deals_container {
+  background-image: url("images/Weekly_Deals_Shirakawa.jpeg");
+  background-size: cover;
+  border: 1px solid black;
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+
+/*
   background-color: maroon;
   color: White;
   text-shadow: 2px 2px #000000;
   font-family: rockwell;
   font-weight: bold;
+*/
 }
 
+
+/*
 .weekly_deals_header {
   padding-left: 30px;
 }
@@ -425,16 +449,28 @@ footer .navigation-items {
 .weekly_deals_date {
   padding-left: 45px;
 }
-
+*/
 .full_moon_container {
+  background-image: url("images/Full_Moon.jpeg");
+  background-size: cover;
+  border: 1px solid black;
+  height: 110px;
+  width: auto;
+  grid-column-start: 5;
+  grid-column-end: span 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  /*
   border: 1px solid black;
   margin-right: 50px;
   background-image: url("images/full_moon_yellow_orange_long.jpeg");
   background-size: 600px;
   background-position: 30px;
   color: white;
+  */
 }
 
+/*
 .full_moon_description {
   text-align: right;
   padding-top: 20px;
@@ -443,6 +479,7 @@ footer .navigation-items {
   font-size: 24px;
   font-weight: bold;
 }
+*/
 
 /* End of Specials page styling */
 
